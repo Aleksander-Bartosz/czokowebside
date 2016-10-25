@@ -1,161 +1,117 @@
-<!DOCTYPE HTML>
-<html lang="pl">
+<!DOCTYPE html>
+<html>
+
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name='viewport' content='initial-scale=1,width=device-width'>
-	<title>Warsztat</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="css/twitter.css" rel="stylesheet" type="text/css" />
-	<link href='https://fonts.googleapis.com/css?family=Raleway:500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<script>
-document.addEventListener("DOMContentLoaded", function(){    
-    var place = document.querySelector(".clickPlace");
-    place.addEventListener("click", function(){
-		document.getElementById('ptaszek').classList.toggle('ptaszek2');
-	});
-});    
-	</script>	
+    <meta charset="utf-8">
+    <title>Javascript Furry game</title>
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<script src='app_rev.js'></script>
 </head>
 
 <body>
-
-	<nav>
-		<div class="nav">
-			<ol>
-				<li><a href="#">O FIRMIE</a>
-				   	<ul>
-						<div class='triangle'></div>
-						<li id='firstli'><a href="#">Aktualności</a></li>
-						<li><a href="#">Nasz Team</a></li>
-						<li id='lastli'><a href="#">Historia</a></li>
-					</ul>
-				</li>
-				<li><a href="#">GALERIA</a></li>
-				<li><a href="#">KONTAKT</a>
-			</ol>
-			<span class='logo'>SIT <span class='spanC'>ON</span> CHAIR</span>
-		</div>	
-	</nav>
-	
-	<header>
-		<div class='HeaderContainer'>
-			<div class='iconleft'><i class="icon-left-open"></i></div>
-			<div class='iconright'><i class="icon-right-open"></i></div>	
-				<div class='chair'></div>
-					<div class='navBigText'>
-						<span class='spanC'>SIT</SPAN> ON OUR <span class='spanC'>CHAIR</SPAN>
-							<p class='smallText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Integer quis diam lectus.In non porta augue. Nam interdum orci magna, eget tincidunt magna aliquet varius.<br> Nullam nibh nibh, sagittis vel bibendum ac, vulputate in est. Sed egestas facilisis sem, vitae lobortis urna convallis vitae. Suspendisse in risus nec mauris laoreet auctor.</p>
-								<button class='HeaderButton'>ZOBACZ WIĘCEJ</button>
-					</div>
-		</div>	
-	</header>
-	
-	<section>
-		<div class='sectionContainer'>
-			<div class='sectionChair'>
-				<div class='sectionLineText'>
-					<p class='MiddleTextLine'>Chair CLAIR</p>
-				</div>
-			</div>
-				<div class='sectionChildChair'>
-					<div class='sectionLineText'>
-						<p class='MiddleTextLine'>Chair MARGARITA</p>
-					</div>
-				</div>
-					<div class='sectionText'>
-						<p class='Lineclass2'>Finds all inputs<br></p>
-						<p class='smallTextSection'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non velit scelerisque odio mollis imperdiet quis et lectus. Nam at dictum tortor, in volutpat ante. In lorem quam, <br><br>pellentesque et ex et, finibus luctus neque. Suspendisse vel erat justo. Vestibulum nibh lacus, lacinia et viverra vitae, tempor sit amet tortor. Donec in neque elit.</p>
-					</div>
-		</div>
-	</section>
-	
-	<article>
-		<div class='ArticleContainer'>
-			<br>
-			<p class='cost'>CENNIK</P>
-			
-				<div class='form'><div class='circle'><div class='SmallCircle'></div></div>
-						<span class='TextBasicPlan'>BASIC PLAN</span>
-							<br><br>
-								<div class='Loop'>
-									<span class='price'>85<sup>99</sup></span>
-										<p class='LoppText'>PLN/MSC</p>
-								</div>
-						<p class='BuyTextForm'>Zakup towaru + dowóz</p>
-						<p class='Servis'>Serwis</p>
-						<p> </p>
-							<button class='formButton'>DOŁĄCZ</button>
-				</div>
-				
-					<div class='form2'>
-						<div class='circle2'><div class='SmallCircle2'></div></div>
-							<span class='TextStandardPlan'>STANDARD PLAN</span>
-								<br><br>
-									<div class='Loop2'>
-										<span class='price2'>95<sup>99</sup></span>
-											<p class='LoppText2'>PLN/MSC</p>
-									</div>
-									<div class='form2TextContainer'>
-										<p class='TextForm2'>Zakup towaru+dowoz</p>
-										<p class='TextForm2a'>Serwis</p>
-										<p class='TextForm2b'>Gwarancja na 5 lat</p>
-									</div>
-							<button class='formButton2'>DOŁĄCZ</button>
-					</div>
-				
-				
-				<div class='form'><div class='circle'><div class='SmallCircle'></div></div>
-					<span class='TextBasicPlan'>ADVENCE PLAN</span>
-						<br><br>
-							<div class='Loop'>
-								<span class='price'>211<sup>99</sup></span>
-									<p class='LoppText'>PLN/MSC</p>
-							</div>
-								<div class='form3TextContainer'>
-									<p class='TextForm3'>Zakup towaru+dowoz</p>
-											<p class='TextForm3a'>Serwis</p>
-											<p class='TextForm3b'>Gwarancja na 6 lat</p>
-									<p class='TextForm3c'>Zakup towaru+dowoz</p>
-								</div>
-									<button class='formButton3'>DOŁĄCZ</button>
-				</div>
-		</div>
-	</article>
-	
-	<footer>
-		<div class='footerContainer'>
-			<p class='cost'>KONTAKT</P>
-				<form>
-					<br>
-						<input class='name' type="text" name="Imie" placeholder='imie'>
-							<br><br>
-							<input class='name' type="text" name="Imie" placeholder='e-mail'>
-						<br><br>
-					<textarea rows="5" placeholder='Wiadomość'></textarea>
-				</form>	
-											<div class='RightFooter'>
-												<div class='RedChair' ></div>
-													<div class='clickPlace'>
-														<div id='ptaszek'></div>
-														</div>
-													<div class='RightFooterText'>Zgadzam na przetwarzanie<br>danych osobowych</div>
-												<div class='ClearButton'><button class='footerButton'>WYŚLIJ</button></div>
-											</div>
-										
-		</div>	
-			<div class='FooterofTheFooters'>
-				<div class='LastFootText'><p>Copyright 2014 | All Right Reserved - Sit On Chair</p></div>
-					<div class='SmallPic'>
-						<div class='fr'></div>
-							<div class='v'></div>
-							<div class='strange'></div>
-						<div class='twitter'></div>
-					</div>
-				<div class='textFooterRight'>SIT <STRONG>ON</STRONG> CHAIR</div>
-			</div>
-	</footer>
-
+	<div class='score'>0</div>
+ <section id='board'>
+    <div class='furry'></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  <section/>	
 </body>
+
 </html>

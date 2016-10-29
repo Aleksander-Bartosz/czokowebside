@@ -49,7 +49,8 @@ Furry.prototype.setAutoMovement = function () {
 	var score =  document.querySelector('.score');
 	var move = setInterval(function() {
 		for (var i = 0; i < this.board.length; i++) {
-            if (this.board[i].classList.contains("furry")) {
+            if (this.board[i].classList=="furry") {
+				
                 this.board[i].classList.remove("furry");
 				
             }

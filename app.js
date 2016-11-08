@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     $("body > header > div > ul > li:nth-child(5)").click(function() {
     $('html, body').animate({
-        scrollTop: $("body > aside > footer > div > div.cookietext > h1").offset().top
+        scrollTop: $("body > footer > div > div.cookietext > h1").offset().top
     }, 1500);
     }); 
           

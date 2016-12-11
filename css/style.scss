@@ -6,6 +6,8 @@ header {
     width: 100%;
     height: 80px;
     background: black;
+    position: fixed;
+    top: 0;
 }
 .contentContainer {
     margin:auto;
@@ -48,10 +50,17 @@ header {
   width: 12px;
   height: 12px;     
 }
-ul {
+#nav-icon3 {
+    display: none;
+}
+.menu > ul {
+    display: block;
     color:white;
     list-style: none;
     text-align: right;
+}
+.closebtn {
+    visibility:hidden;
 }
 li {
     display: inline-block;
@@ -69,7 +78,7 @@ nav {
     -webkit-box-shadow: -1px 5px 5px 0px rgba(196,196,196,1);
     -moz-box-shadow: -1px 5px 5px 0px rgba(196,196,196,1);
     box-shadow: -1px 5px 5px 0px rgba(196,196,196,1);
-    
+    margin-top: 80px;
 
     .navText {
         width: 50%;
@@ -257,4 +266,185 @@ body > aside > footer > div > div.cookietext > p:nth-child(3) {
     color:#8c8c8c;
     margin: 0;
     text-align: center;
+}
+@media all and (max-width:970px) {
+    .menu > ul {
+        display: none;
+    }
+    #nav-icon3 {
+          display: block;
+          width: 60px;
+          height: 45px;
+          position: relative;
+          float: right;
+          margin: 15px;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -webkit-transition: .5s ease-in-out;
+          -moz-transition: .5s ease-in-out;
+          -o-transition: .5s ease-in-out;
+          transition: .5s ease-in-out;
+          cursor: pointer;
+        span {
+          display: block;
+          position: absolute;
+          height: 9px;
+          width: 100%;
+          background: white;
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -webkit-transition: .25s ease-in-out;
+          -moz-transition: .25s ease-in-out;
+          -o-transition: .25s ease-in-out;
+          transition: .25s ease-in-out;
+        }
+    }
+    #nav-icon3 span:nth-child(1) {
+      top: 0px;
+    }
+
+    #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+      top: 18px;
+    }
+
+    #nav-icon3 span:nth-child(4) {
+      top: 36px;
+    }
+
+    #nav-icon3.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+
+    #nav-icon3.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    #nav-icon3.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    #nav-icon3.open span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+    
+    .menu ul {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        padding: 0;
+        padding-top: 70px;
+        text-align: center;
+        li {
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s
+                
+        }
+        li:hover {
+            color: #45add8;
+        }
+    }
+      
+}
+@media all and (max-width:800px) {
+    .rad {
+        left:320px;
+    }
+    .contentContainer {
+        width: 785px;
+    }
+    section {
+       height: 435px;
+    }
+    .gallery img {
+        width: 167px;
+    }
+}
+@media all and (max-width:700px) {
+     .contentContainer {
+        width: 680px;
+    }
+     .rad {
+        left:270px;
+    }
+     section {
+       height: 480px;
+    }
+    .gallery > img:nth-child(5) {
+        display: none;
+    }
+    .gallery > img:nth-child(6) {
+        display: none;
+    }
+    body > article {
+            height: 520px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .contentContainer {
+        width: 480px;
+        font-size: 15px;
+    }
+    
+    .choco {
+        background-size: 80%;
+    }
+    .rad {
+        display: none;
+    }
+    nav .navText {
+        font-size: 15px;
+    }
+    nav .navphoto {
+        height: 267px;
+    }
+    nav > .contentContainer > div  {
+        align-items: flex-start;
+    }
+    nav {
+        height: 268px;
+    }
+    section {
+    height: 600px;
+    }
+    .gallery > img:nth-child(5) {
+        display: block;
+    }
+    .gallery > img:nth-child(6) {
+        display: block;
+    }
+    .gallery img {
+    width: 130px;
+    }
+    body > aside > div:nth-child(3) {
+            height: 217px;
+    }
+    body > footer > div > div.cookietext > h1 {
+        padding-top: 20px;
+    }
 }

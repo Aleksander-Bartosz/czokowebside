@@ -56,6 +56,7 @@ header {
   display: none; }
 
 .menu > ul {
+  display: block;
   color: white;
   list-style: none;
   text-align: right; }
@@ -77,7 +78,8 @@ nav {
   height: 216px;
   -webkit-box-shadow: -1px 5px 5px 0px #c4c4c4;
   -moz-box-shadow: -1px 5px 5px 0px #c4c4c4;
-  box-shadow: -1px 5px 5px 0px #c4c4c4; }
+  box-shadow: -1px 5px 5px 0px #c4c4c4;
+  margin-top: 80px; }
   nav .navText {
     width: 50%;
     color: white; }
@@ -313,7 +315,7 @@ body > aside > footer > div > div.cookietext > p:nth-child(3) {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: black;
     overflow-x: hidden;
     padding: 0;
     padding-top: 70px;
@@ -321,10 +323,80 @@ body > aside > footer > div > div.cookietext > p:nth-child(3) {
     .menu ul li {
       text-decoration: none;
       font-size: 25px;
-      color: #818181;
+      color: white;
       display: block;
       transition: 0.3s; }
     .menu ul li:hover {
-      color: #f1f1f1; } }
+      color: #45add8; } }
+@media all and (max-width: 800px) {
+  .rad {
+    left: 320px; }
+
+  .contentContainer {
+    width: 785px; }
+
+  section {
+    height: 435px; }
+
+  .gallery img {
+    width: 167px; } }
+@media all and (max-width: 700px) {
+  .contentContainer {
+    width: 680px; }
+
+  .rad {
+    left: 270px; }
+
+  section {
+    height: 480px; }
+
+  .gallery > img:nth-child(5) {
+    display: none; }
+
+  .gallery > img:nth-child(6) {
+    display: none; }
+
+  body > article {
+    height: 520px; } }
+@media all and (max-width: 500px) {
+  .contentContainer {
+    width: 480px;
+    font-size: 15px; }
+
+  .choco {
+    background-size: 80%; }
+
+  .rad {
+    display: none; }
+
+  nav .navText {
+    font-size: 15px; }
+
+  nav .navphoto {
+    height: 267px; }
+
+  nav > .contentContainer > div {
+    align-items: flex-start; }
+
+  nav {
+    height: 268px; }
+
+  section {
+    height: 600px; }
+
+  .gallery > img:nth-child(5) {
+    display: block; }
+
+  .gallery > img:nth-child(6) {
+    display: block; }
+
+  .gallery img {
+    width: 130px; }
+
+  body > aside > div:nth-child(3) {
+    height: 217px; }
+
+  body > footer > div > div.cookietext > h1 {
+    padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

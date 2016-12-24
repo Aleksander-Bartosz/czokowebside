@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
             menu.css('opacity','0');
         }
         else {
-             menu.css('opacity','1');
+             menu.css('opacity','0.9');
         }
+        location.reload();
     });
     
     if ($(window).outerWidth()<970) {
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		$(this).toggleClass('open');
          var check = $(this).hasClass('open');
          if (check) {
-             menu.css('opacity','1'); 
+             menu.css('opacity','0.9'); 
             menu.animate({
                 width:'25%',
             },1000);

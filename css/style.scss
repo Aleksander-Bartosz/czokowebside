@@ -350,9 +350,9 @@ body > aside > footer > div > div.cookietext > p:nth-child(3) {
         position: fixed;
         z-index: 1;
         top: 0;
+        display: block;
         left: 0;
         background-color: black;
-        overflow-x: hidden;
         padding: 0;
         padding-top: 70px;
         text-align: center;
@@ -361,7 +361,7 @@ body > aside > footer > div > div.cookietext > p:nth-child(3) {
             font-size: 25px;
             color: white;
             display: block;
-            transition: 0.3s
+            
                 
         }
         li:hover {
